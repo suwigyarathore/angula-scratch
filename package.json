@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "live-server"
+    "start": "live-server",
+    "dev": "concurrently \"tsc -w\" \"npm run start\""
   },
   "author": "Suwigya Rathore",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "live-server": "^1.2.0",
     "typescript": "^2.6.2"
   }
